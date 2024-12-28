@@ -7,3 +7,4 @@ outputs/
 .env
 .DS_Store
 compileCV.json
+metadata.json
