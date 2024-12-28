@@ -1,0 +1,9 @@
+# Folder
+node_modules/
+data/
+outputs/
+
+# Files
+.env
+.DS_Store
+compileCV.json
