@@ -1,3 +1,5 @@
+set question = 'I am a Project Management. I need to create system inventory management. What kind of skill I need to my developer?'
+
 WITH context AS (
     SELECT 
         name,
@@ -17,8 +19,8 @@ concatenated_context AS (
 )
 SELECT 
     snowflake.cortex.complete(
-        'llama3.1-8b', 
-        'Use the provided context to answer the question. Be concise. ' || 
+        'mistral-large2', 
+        'Here is our analysis of our employee, please just select the related employee who can help to our question. Make sure your narative is explain the project and the reason ' || 
         '###
         CONTEXT: ' || concatenated_context.combined_context || '
         ###
